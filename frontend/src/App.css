@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header {
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.drop-zone {
+  border: 3px dashed #61dafb;
+  border-radius: 15px;
+  padding: 40px 20px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.drop-zone.drag-over {
+  background-color: #3a3f4a;
+  border-color: #fff;
+}
+
+.drop-zone p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #61dafb;
+}
+
+button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+button:disabled {
+  background-color: #4a5a6e;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  background-color: #fff;
+  transform: translateY(-2px);
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.spinner-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #61dafb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.download-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #3a3f4a;
+  border-radius: 10px;
+}
+
+.download-section p {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.download-section button {
+    background-color: #20c997;
+}
+
+.download-section button:hover {
+    background-color: #12b886;
+}
